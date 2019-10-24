@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:id="@+id/spaceFromTop"
+            android:layout_width="match_parent"
+            android:layout_height="85dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/spaceFromTop"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_chat" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/purple_chat"
+            android:textAlignment="center"
+            android:textColor="@color/colorLogin"
+            android:textSize="23dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/detail_purple_chat"
+            android:textAlignment="center"
+            android:textColor="#aaaaaa"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+        <LinearLayout
+            android:padding="12.5dp"
+            android:background="@drawable/bg_button_rounded_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="USERNAME" />
+
+            <EditText
+                android:id="@+id/edtTxtUsrNme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/edtTxtPsd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnLgn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_button_rounded_gradient_purple"
+            android:text="SIGN IN"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnSgnUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_button_rounded_clear"
+            android:text="SIGN UP FOR AN ACCOUNT"
+            android:textColor="@color/colorLogin" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Intent</string>
+    <string name="purple_chat">Welcome to <b><i>PureChat</i></b> App</string>
+    <string name="detail_purple_chat">Chat App that Will Satisfy You in this Era</string>
+</resources>

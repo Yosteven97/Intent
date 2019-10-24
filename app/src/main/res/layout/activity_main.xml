@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:id="@+id/spaceFromTop"
+            android:layout_width="match_parent"
+            android:layout_height="85dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/spaceFromTop"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_chat" />
+
+        <Space
+            android:id="@+id/spaceFromMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="85dp" />
+
+        <TextView
+            android:id="@+id/txtUsrNme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#8105d8"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/purple_chat"
+            android:textAlignment="center"
+            android:textColor="#8105d8"
+            android:textSize="23dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/detail_purple_chat"
+            android:textAlignment="center"
+            android:textColor="#aaaaaa"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+        <Space
+            android:id="@+id/spaceFromBottom"
+            android:layout_width="match_parent"
+            android:layout_height="85dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
